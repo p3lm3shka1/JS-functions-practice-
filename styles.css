@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    135deg,
+    rgb(15, 32, 39),
+    rgb(32, 58, 67),
+    rgb(44, 83, 100)
+  );
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.container {
+  width: 400px;
+  padding: 3rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  display: grid;
+  gap: 3rem;
+}
+
+.uzd-1,
+.uzd-2,
+.uzd-3 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+#didinimas,
+#iveskSkaiciu,
+#atgal,
+#pirmyn,
+#skaiciuoti,
+#didinimoBtn,
+#normalBtn,
+#boldBtn,
+#italicBtn,
+#modeChanger {
+  align-self: start;
+  font-size: 18px;
+  padding: 0.8rem 1.4rem;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 9px rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgb(95, 156, 255), rgb(122, 108, 255));
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:active {
+    box-shadow: 0 4px rgb(255, 255, 255);
+    transform: translateY(4px);
+  }
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#lygusNelygus,
+#action,
+#rezultatas {
+  padding: 1rem;
+  border-radius: 14px;
+  font-size: 22px;
+  text-align: center;
+  background: rgba(255, 255, 255);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+  color: rgb(0, 0, 0);
+}
+
+#count {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+#numeris,
+#ugisInput,
+#svorisInput,
+#dydisInput,
+#inputNumber {
+  font-size: 18px;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255);
+  color: rgb(0, 0, 0);
+  outline: none;
+  width: auto;
+  text-align: center;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    border: none;
+  }
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+ul {
+  color: rgb(255, 255, 255);
+}
+
+table {
+  td {
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.fontChanger {
+  display: grid;
+  gap: 1rem;
+  color: rgb(255, 255, 255);
+  justify-items: center;
+
+  .input-inner {
+    color: rgb(255, 255, 255);
+  }
+
+  .ptext {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.dark-mode {
+  background: rgb(15, 23, 42);
+  color: rgb(229, 231, 235);
+}
+
+.purple-mode {
+  background: rgb(138, 43, 226);
+  color: rgb(0, 128, 0);
+}
+
+.theme-switch {
+  display: inline-block;
+
+  input {
+    display: none;
+  }
+
+  .track {
+    width: 56px;
+    height: 30px;
+    background: rgb(0, 0, 0);
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.35s ease;
+  }
+
+  .thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+input:checked + .track {
+  background: linear-gradient(135deg, rgb(99, 102, 241), rgb(139, 92, 246));
+}
+
+input:checked + .track .thumb {
+  transform: translateX(26px);
+}
