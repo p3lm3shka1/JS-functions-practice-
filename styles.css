@@ -12,7 +12,6 @@ body {
     rgb(32, 58, 67),
     rgb(44, 83, 100)
   );
-  transition: background 0.4s ease, color 0.4s ease;
 }
 
 .container {
