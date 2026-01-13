@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="praktinis.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <!-- 1 number count 1ver -->
+      <div class="uzd-1">
+        <button id="didinimas">Padidink skaičiuką</button>
+        <p>Skaičius yra: <span id="count">0</span></p>
+        <p id="action">Pradžia</p>
+      </div>
+      <!-- even and odd numbers -->
+      <div class="uzd-2">
+        <input type="text" id="numeris" inputmode="numeric" />
+        <button id="iveskSkaiciu">Įvesk skaičiu</button>
+        <p id="lygusNelygus">Koks bus tavo skaičius?</p>
+      </div>
+      <!-- number count 2ver -->
+      <div class="uzd-3">
+        <p>Skaičius yra: <span id="count2">1</span></p>
+        <button id="atgal">Atgal</button>
+        <button id="pirmyn">Pirmyn</button>
+      </div>
+      <!-- simple BMI calc -->
+      <input type="text" placeholder="Ugus (cm)" id="ugisInput" />
+      <input type="text" name="" placeholder="Svoris (kg)" id="svorisInput" />
+      <button id="skaiciuoti">Skaiciuoti</button>
+      <div id="rezultatas"></div>
+      <!-- text zoom -->
+      <h1 class="didelisTekstas">pavadinimas</h1>
+      <p class="didelisTekstas">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, iusto
+        qui? Reiciendis, repellendus numquam dolorum impedit animi beatae
+        voluptas officia sunt eligendi iste fuga ullam tempore debitis.
+        Quibusdam impedit quisquam id mollitia? Incidunt molestias
+        necessitatibus minus vitae iure! Aspernatur, voluptatem. Hic
+        perspiciatis ut blanditiis sit asperiores a voluptate pariatur quisquam.
+      </p>
+      <ul class="didelisTekstas">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ul>
+      <table class="didelisTekstas">
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Lorem, ipsum dolor.</td>
+          <td class="didelisTekstas">Lorem, ipsum dolor.</td>
+        </tr>
+      </table>
+      <button id="didinimoBtn">viska isdidinti</button>
+      <!-- font style changer -->
+      <div class="fontChanger">
+        <div class="input-inner">
+          <label for="inputNumber"></label>
+          <input type="number" id="inputNumber" placeholder="Šrifto dydis" />
+        </div>
+        <div class="btngroup">
+          <button id="normalBtn">Paprastas</button>
+          <button id="boldBtn">Pastorintas</button>
+          <button id="italicBtn">Pasviras</button>
+        </div>
+      </div>
+
+      <div class="ptext">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore
+          exercitationem hic molestiae ab, amet expedita quae debitis numquam
+          minus nobis pariatur qui a nostrum accusamus veritatis atque
+          reprehenderit! Nulla.
+        </p>
+      </div>
+      <!-- dark/light mode, there are some options in js file -->
+      <div class="dark-mode"></div>
+      <div class="purple-mode"></div>
+      <h1>Dark Mode / Purple Mode / Light Mode</h1>
+      <label class="theme-switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="track">
+          <span class="thumb"></span>
+        </span>
+      </label>
+      <button id="modeChanger">Switch mode</button>
+    </section>
+  </body>
+</html>
