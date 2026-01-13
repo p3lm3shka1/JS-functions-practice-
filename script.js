@@ -150,8 +150,8 @@ italicBtn.addEventListener("click", () => {
 });
 
 //7 dark/light mode
-const darkMode = document.getElementById("dark-mode");
-const purpleMode = document.getElementById("purple-mode");
+const darkMode = document.querySelector(".dark-mode");
+const purpleMode = document.querySelector(".purple-mode");
 const modeChanger = document.getElementById("modeChanger");
 const toggle = document.getElementById("themeToggle");
 
