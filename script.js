@@ -180,4 +180,4 @@ modeChanger.addEventListener("click", function () {
 //3rd  switcher
 //toggle.addEventListener("change", () => {
 //document.body.classList.toggle("dark-mode", toggle.checked);
-});
+//});
