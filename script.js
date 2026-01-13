@@ -156,10 +156,10 @@ const modeChanger = document.getElementById("modeChanger");
 const toggle = document.getElementById("themeToggle");
 
 // 1st option
-// modeChanger.addEventListener("click", function () {
-//   let element = document.body;
-//   element.classList.toggle("dark-mode");
-// });
+modeChanger.addEventListener("click", function () {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+});
 
 //2nd option
 // const body = document.body;
@@ -178,6 +178,6 @@ const toggle = document.getElementById("themeToggle");
 // });
 
 //3rd  switcher
-toggle.addEventListener("change", () => {
-  document.body.classList.toggle("dark-mode", toggle.checked);
+//toggle.addEventListener("change", () => {
+//document.body.classList.toggle("dark-mode", toggle.checked);
 });
