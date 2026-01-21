@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -80,38 +80,65 @@
         </tr>
       </table>
       <button id="didinimoBtn">viska isdidinti</button>
-      <!-- font style changer -->
-      <div class="fontChanger">
-        <div class="input-inner">
-          <label for="inputNumber"></label>
-          <input type="number" id="inputNumber" placeholder="Šrifto dydis" />
-        </div>
-        <div class="btngroup">
-          <button id="normalBtn">Paprastas</button>
-          <button id="boldBtn">Pastorintas</button>
-          <button id="italicBtn">Pasviras</button>
-        </div>
-      </div>
-
-      <div class="ptext">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore
-          exercitationem hic molestiae ab, amet expedita quae debitis numquam
-          minus nobis pariatur qui a nostrum accusamus veritatis atque
-          reprehenderit! Nulla.
-        </p>
-      </div>
-      <!-- dark/light mode, there are some options in js file -->
+      <!-- dark/light mode -->
       <div class="dark-mode"></div>
-      <div class="purple-mode"></div>
-      <h1>Dark Mode / Purple Mode / Light Mode</h1>
-      <label class="theme-switch">
-        <input type="checkbox" id="themeToggle" />
-        <span class="track">
-          <span class="thumb"></span>
-        </span>
-      </label>
+      <h1>Dark Mode</h1>
       <button id="modeChanger">Switch mode</button>
+      <!-- font style changer -->
+      <div class="fontchanger">
+        <label>
+          <input type="number" id="fontSizeChanger" value="16" />
+        </label>
+        <div class="buttons">
+          <button id="normalBtn">Normal</button>
+          <button id="boldBtn">Bold</button>
+          <button id="italicBtn">Italic</button>
+        </div>
+      </div>
+      <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolore
+        exercitationem hic molestiae ab, amet.
+      </p>
+      <!-- add / remove -->
+      <div class="nueto">
+        <div id="bulb" class="bulb on"></div>
+        <button id="bulbBtn"></button>
+      </div>
+      <!-- cars select -->
+      <div class="cars" id="cars-cont">
+        <h1>Cars</h1>
+      </div>
+      <!-- shop cart -->
+      <main class="cart">
+        <h1>Prekių krepšelis</h1>
+        <div class="cart-header">
+          <div>Produktas</div>
+          <div>Vieneto kaina</div>
+          <div>Kiekis</div>
+          <div>Bendra kaina</div>
+        </div>
+        <div class="cart-products" id="cartProducts"></div>
+        <div class="cart-footer">
+          <button id="updateCart">Atnaujinti</button>
+          <div class="cart-total">
+            Užsakymo suma: <strong id="totalPrice">0.00 €</strong>
+          </div>
+        </div>
+      </main>
+      <!-- recipe -->
+      <div class="recipe">
+        <h1>Pasirinkite recepta:</h1>
+        <div id="recipeCard"></div>
+        <div class="customrange">
+          <h1>Kiek pociju gaminsite?</h1>
+          <input type="range" id="customRange" min="1" max="10" value="1" />
+          <p>Porcijų skaičius: <span id="rangeValue"></span></p>
+        </div>
+        <div class="ingridients">
+          <h1>Jums reikes siu ingridientu, tokiais kiekiais</h1>
+          <div id="ingredientsList"></div>
+        </div>
+      </div>
     </section>
     <script src="script.js" defer></script>
   </body>
