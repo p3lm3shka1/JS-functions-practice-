@@ -445,24 +445,24 @@ rangeInput.addEventListener("input", () => {
   }
 });
 
-const ingredientName(z) {
-    vistiena: "Vištienos",
-    avokado: "Avokado",
-    mocarela: "Mocarelos",
-    pomidorai: "Pomidorų",
-    miltai: "Miltų",
-    kiausiniai: "Kiaušinių",
-    melynes: "Mėlynių",
-    cukrus: "Cukraus",
-    makaronai: "Makaronų",
-    svogunai: "Svogūnų",
-    farsas: "Faršo",
-    aliejus: "Aliejaus",
-  };
+const ingredientNames = {
+  vistiena: "Vištienos",
+  avokado: "Avokado",
+  mocarela: "Mocarelos",
+  pomidorai: "Pomidorų",
+  miltai: "Miltų",
+  kiausiniai: "Kiaušinių",
+  melynes: "Mėlynių",
+  cukrus: "Cukraus",
+  makaronai: "Makaronų",
+  svogunai: "Svogūnų",
+  farsas: "Faršo",
+  aliejus: "Aliejaus",
+};
 
 function ingredientName(z) {
-  if (ingredientName[z]) {
-    return names[z];
+  if (ingredientNames[z]) {
+    return ingredientNames[z];
   } else {
     return z;
   }
