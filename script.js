@@ -445,8 +445,7 @@ rangeInput.addEventListener("input", () => {
   }
 });
 
-function ingredientName(z) {
-  const names = {
+const ingredientName(z) {
     vistiena: "Vištienos",
     avokado: "Avokado",
     mocarela: "Mocarelos",
@@ -461,7 +460,8 @@ function ingredientName(z) {
     aliejus: "Aliejaus",
   };
 
-  if (names[z]) {
+function ingredientName(z) {
+  if (ingredientName[z]) {
     return names[z];
   } else {
     return z;
